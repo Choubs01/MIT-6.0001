@@ -1,3 +1,4 @@
+#Simulates a game of hangman against the computer with some QOL aspects. Pools word from "words.txt" file, can always add more words if so desired.
 import random
 import string
 
@@ -66,7 +67,7 @@ def get_available_letters(letters_guessed): #Returns remaining unguessed letters
             alphabet[n] = "_"
     return ' '.join(alphabet)
 
-print("Welcome to Hangman. If you would like to quit, enter 'Quit'.")
+print("Welcome to Hangman.")
 def hangman(secret_word):
     guesses_left = 6
     letters_guessed = []
