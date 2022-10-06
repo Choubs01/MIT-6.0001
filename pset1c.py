@@ -1,9 +1,11 @@
+#Uses a bisection search to find the best saving rate to save for an intended goal withing a certain period, according to a salary, semi annual raise, and other factors
+#The code can be optimised, idk how though
 annual_salary = float(input("Enter your annual salary: "))
-total_cost = 1000000
+total_cost = float(input("Enter your saving goal: "))
 semi_annual_raise = 0.07
 c = annual_salary
 
-portion_down_payment = 0.25
+portion_down_payment = 1 #Would be 0.25 or other
 current_savings = 0
 r = 0.04
 r1 = r/12 + 1
