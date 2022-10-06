@@ -1,3 +1,4 @@
+#Prints how many months it would take to save up for an intended amount according to salary and saving goal inputs, and other factors
 annual_salary = float(input("Enter your annual salary: "))
 portion_saved = float(input("Enter the percent of your salary to save, as a decimal: "))
 total_cost = float(input("Enter the cost of your dream home: "))
