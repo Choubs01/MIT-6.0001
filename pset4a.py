@@ -1,3 +1,4 @@
+#Prints all possible combinations of the characters of an input.
 def get_permutations(sequence):
     if len(sequence) == 1:   #If there's just 1 character, then there are no combinations to give.
         return list(sequence)
