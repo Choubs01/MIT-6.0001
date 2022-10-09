@@ -1,6 +1,4 @@
-import math
-import random
-import string
+import math, random, string
 
 VOWELS = 'aeiou'
 CONSONANTS = 'bcdfghjklmnpqrstvwxyz'
@@ -8,7 +6,6 @@ CONSONANTS = 'bcdfghjklmnpqrstvwxyz'
 SCRABBLE_LETTER_VALUES = {
     'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f': 4, 'g': 2, 'h': 4, 'i': 1, 'j': 8, 'k': 5, 'l': 1, 'm': 3, 'n': 1, 'o': 1, 'p': 3, 'q': 10, 'r': 1, 's': 1, 't': 1, 'u': 1, 'v': 4, 'w': 4, 'x': 8, 'y': 4, 'z': 10
 }
-
 
 WORDLIST_FILENAME = "words.txt"
 
@@ -74,7 +71,7 @@ def update_hand(hand, word): #Returns a new dictionary that contains the hand mi
         if b < 1:
             lst.append(a)
     for letters in lst:
-        hand1.pop(letters)
+        hand1.pop(letters)      
 
     return hand1
 
@@ -120,7 +117,7 @@ def calculate_handlen(hand): #Calculates the number of letters in a hand
 def play_hand(hand, word_list):
     hand1 = hand.copy()
     score = 0
-    print("\nCurrent Hand:"), display_hand(hand1)
+    print("\nCurrent Hand:"), display_hand(hand1)        #IDKY it's not letting me print these on the same line. Doesn't matter much fortunately.
     substitute = str(input("Would you like to change a letter in the current hand? ")).lower()
     if substitute == 'yes' or substitute == 'y':
         try:
