@@ -1,3 +1,4 @@
+#Plays a word game.
 import math, random, string
 
 VOWELS = 'aeiou'
