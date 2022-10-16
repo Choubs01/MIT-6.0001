@@ -1,3 +1,5 @@
+#Unfinished, will complete in far off future.
+
 import feedparser
 import string
 import time
